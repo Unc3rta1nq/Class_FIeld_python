@@ -23,8 +23,8 @@ class Field:
                     self.matrix[i][j] = '_'
 
     def __str__(self):
-        df = pd.DataFrame(self.matrix)
-        return df
+        format_field = pd.DataFrame(self.matrix)
+        return format_field
 
     def __repr__(self):
         return f'Field(n={self.n}, m={self.m}, per={self.per})'
